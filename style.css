@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Comic Sans Ms, arial, verdana;
+    background: linear-gradient(to bottom right, #cf2620, rgb(31, 13, 194));
+    background-size: 200% 100%; /* Ampliamos el tamaño para animar solo horizontalmente */
+    animation: colorChangeAnimation 6s linear infinite;
+
+}
+  
+  @keyframes colorChangeAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+p {
+    font-size: x-large;
+    padding: 2%;
+    color: black;
+} 
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-size:30px;
+    padding: 30px;
+    color: black;
+    border-color: black;
+    border-radius: 7px;
+    font-family: Comic Sans Ms, arial, verdana;
+
+}
+
+#yesBtn {
+    transform: translate(-100%, 0%);
+    background-image: linear-gradient(to bottom right, #267c2e, #00ff00);
+}
+
+#yesBtn:hover{
+
+    background-color: #f0f0f0;
+}
+
+#noBtn {
+    position: absolute;
+    background-image: linear-gradient(to bottom right, #ff0000, #8b3a3a);
+    /* top: -50%;
+    left: 0%;
+    transform: traslate(0%, -50%); */
+}
+
+.img{
+    width: 130px;
+}
